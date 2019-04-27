@@ -2,7 +2,11 @@ package br.com.contests;
 
 import br.com.contests.averybigsum.AVeryBigSum;
 import br.com.contests.comparethetriplets.CompareTheTriplets;
+import br.com.contests.countingvalleys.CountingValleys;
+import br.com.contests.jumpingontheclouds.JumpingOnTheClouds;
 import br.com.contests.plusminus.PlusMinus;
+import br.com.contests.repeatedstring.RepeatedString;
+import br.com.contests.sockmerchant.SockMerchant;
 import br.com.contests.timeconversion.TimeConversion;
 
 public class Main {
@@ -28,5 +32,27 @@ public class Main {
         System.out.println(AVeryBigSum.class.getSimpleName());
         AVeryBigSum.testCase();
         System.out.println();
+
+        /* SOCK MERCHANT */
+        System.out.println(SockMerchant.class.getSimpleName());
+        SockMerchant.testCase();
+        System.out.println();
+
+        /* Counting Valleys */
+        System.out.println(CountingValleys.class.getSimpleName());
+        CountingValleys.testCase();
+        System.out.println();
+
+        /* Jumping on the Clouds */
+        System.out.println(JumpingOnTheClouds.class.getSimpleName());
+        JumpingOnTheClouds.testCase();
+        System.out.println();
+
+        /*Repeated String*/
+        System.out.println(RepeatedString.class.getSimpleName());
+        RepeatedString.testCase();
+        System.out.println();
+
+
     }
 }
