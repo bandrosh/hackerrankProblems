@@ -1,9 +1,9 @@
 package br.com.contests.countingvalleys;
 
 public class CountingValleys {
-    private static int VALLEY = 0;
-    private static int MOUNTAIN = 1;
-    private static int SEA = 3;
+    private static final int VALLEY = 0;
+    private static final int MOUNTAIN = 1;
+    private static final int SEA = 3;
 
     public static void testCase() {
         int n = 12;

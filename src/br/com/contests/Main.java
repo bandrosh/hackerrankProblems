@@ -9,7 +9,7 @@ import br.com.contests.repeatedstring.RepeatedString;
 import br.com.contests.sockmerchant.SockMerchant;
 import br.com.contests.timeconversion.TimeConversion;
 
-public class Main {
+class Main {
 
     public static void main(String[] args) {
 

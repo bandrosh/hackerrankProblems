@@ -7,7 +7,7 @@ public class PlusMinus {
 
     public static void testCase(){
         int n = 6;
-        String ent = new String("-4 3 -9 0 4 1");
+        String ent = "-4 3 -9 0 4 1";
 
         String[] arrItems = ent.split(" ");
 
@@ -25,12 +25,12 @@ public class PlusMinus {
 
         arr[0] = (double) pos/n; arr[1] = (double) neg/n; arr[2] = (double) zeroes/n;
 
-        plusMinus(arr, 3);
+        plusMinus(arr);
     }
 
-    static void plusMinus(double [] arr, int n) {
+    private static void plusMinus(double[] arr) {
         NumberFormat numberFormat = new DecimalFormat("#0.000000");
-        for(int i = 0; i < n; i++) {
+        for (int i = 0; i < 3; i++) {
             System.out.println(numberFormat.format(arr[i]).replace(",", "."));
         }
 

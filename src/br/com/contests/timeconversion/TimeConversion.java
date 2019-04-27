@@ -7,17 +7,16 @@ import java.util.Date;
 
 public class TimeConversion {
     public static String testCase() {
-        return solve("07:05:45PM");
+        return solve();
     }
 
-    public static String solve(String s) {
+    private static String solve() {
         DateFormat inputTimeFormat = new SimpleDateFormat("hh:mm:ssaa");
         DateFormat outputTimeFormat = new SimpleDateFormat("HH:mm:ss");
 
         try {
-            Date time = inputTimeFormat.parse(s);
-            String output = outputTimeFormat.format(time);
-            return output;
+            Date time = inputTimeFormat.parse("07:05:45PM");
+            return outputTimeFormat.format(time);
         } catch(ParseException e){
             e.printStackTrace();
         }

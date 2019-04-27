@@ -9,8 +9,8 @@ import static java.util.stream.Collectors.toList;
 public class CompareTheTriplets {
 
     public static void testCase(){
-        String entAllice = new String("17 28 30");
-        String entBoB = new String("99 16 8");
+        String entAllice = "17 28 30";
+        String entBoB = "99 16 8";
 
         List<Integer> ali = Stream.of(entAllice.split(" "))
                 .map(Integer::parseInt)
@@ -22,7 +22,7 @@ public class CompareTheTriplets {
         System.out.println(solve(ali, bob).toString());
     }
 
-    static List<Integer> solve(List<Integer> a, List<Integer> b) {
+    private static List<Integer> solve(List<Integer> a, List<Integer> b) {
         int size = a.size();
         List<Integer> resp = Arrays.asList(0, 0);
 
