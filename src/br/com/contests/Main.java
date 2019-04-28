@@ -4,10 +4,12 @@ import br.com.contests.averybigsum.AVeryBigSum;
 import br.com.contests.comparethetriplets.CompareTheTriplets;
 import br.com.contests.countingvalleys.CountingValleys;
 import br.com.contests.jumpingontheclouds.JumpingOnTheClouds;
+import br.com.contests.leftrotation.LeftRotation;
 import br.com.contests.plusminus.PlusMinus;
 import br.com.contests.repeatedstring.RepeatedString;
 import br.com.contests.sockmerchant.SockMerchant;
 import br.com.contests.timeconversion.TimeConversion;
+import br.com.contests.twodarrayds.TwoDArrayDS;
 
 class Main {
 
@@ -53,6 +55,14 @@ class Main {
         RepeatedString.testCase();
         System.out.println();
 
+        /* 2D Array - DS */
+        System.out.println(TwoDArrayDS.class.getSimpleName());
+        TwoDArrayDS.testCase();
+        System.out.println();
 
+        /* Left Rotation */
+        System.out.println(LeftRotation.class.getSimpleName());
+        LeftRotation.testCase();
+        System.out.println();
     }
 }
