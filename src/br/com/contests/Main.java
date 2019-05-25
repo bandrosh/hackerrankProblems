@@ -5,6 +5,7 @@ import br.com.contests.comparethetriplets.CompareTheTriplets;
 import br.com.contests.countingvalleys.CountingValleys;
 import br.com.contests.jumpingontheclouds.JumpingOnTheClouds;
 import br.com.contests.leftrotation.LeftRotation;
+import br.com.contests.newyearchaos.NewYearChaos;
 import br.com.contests.plusminus.PlusMinus;
 import br.com.contests.repeatedstring.RepeatedString;
 import br.com.contests.sockmerchant.SockMerchant;
@@ -63,6 +64,11 @@ class Main {
         /* Left Rotation */
         System.out.println(LeftRotation.class.getSimpleName());
         LeftRotation.testCase();
+        System.out.println();
+
+        /* New Year Chaos */
+        System.out.println(NewYearChaos.class.getSimpleName());
+        NewYearChaos.testCase();
         System.out.println();
     }
 }
