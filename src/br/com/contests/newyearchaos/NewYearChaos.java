@@ -4,15 +4,22 @@ public class NewYearChaos {
 
 
     public static void testCase() {
-        int t = 2;
+        int t = 3;
 
         int[] n = new int[t];
-        n[0] = n[1] = 5;
+        n[0] = n[1] = n[2] = 8;
 
 
         String[] s = new String[t];
-        s[0] = "2 1 5 3 4";
-        s[1] = "2 5 1 3 4";
+        s[0] = "5 1 2 3 7 8 6 4";
+        s[1] = "1 2 5 3 7 8 6 4";
+        s[2] = "1 2 5 3 4 7 8 6";
+
+//        2
+//        8
+//
+//        8
+//
 
         for (int tItr = 0; tItr < t; tItr++) {
             int[] q = new int[n[tItr]];
@@ -77,9 +84,32 @@ public class NewYearChaos {
 
     // Complete the minimumBribes function below.
     static void minimumBribes(int[] q) {
-        int[] trunk = new int[q.length];
-        System.out.println(countSwaps(q, 5, trunk));
+        int length = q.length;
+        int countSwap = 0;
 
-        System.out.println("HELLO");
+        boolean chaotic = false;
+        int positives = 0;
+
+        for(int i = 0; i < length; i++) {
+            int dist = q[i] - i - 1;
+
+            if(dist > 2) {
+                chaotic = true;
+                break;
+            }
+            if(dist > 0){
+                countSwap += dist;
+                positives++;
+            } else if(dist < 0){
+                if(positives < Math.abs(dist))
+                    countSwap += Math.abs(positives + dist);
+            }
+        }
+
+        if (chaotic) {
+            System.out.println("Too chaotic");
+        } else {
+            System.out.println(countSwap);
+        }
     }
 }

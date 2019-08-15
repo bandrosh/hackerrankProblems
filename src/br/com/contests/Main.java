@@ -1,5 +1,6 @@
 package br.com.contests;
 
+import br.com.contests.HackerRankTest.Solution;
 import br.com.contests.averybigsum.AVeryBigSum;
 import br.com.contests.comparethetriplets.CompareTheTriplets;
 import br.com.contests.countingvalleys.CountingValleys;
@@ -70,5 +71,6 @@ class Main {
         System.out.println(NewYearChaos.class.getSimpleName());
         NewYearChaos.testCase();
         System.out.println();
+
     }
 }
