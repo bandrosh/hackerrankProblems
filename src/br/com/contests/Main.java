@@ -1,6 +1,5 @@
 package br.com.contests;
 
-import br.com.contests.HackerRankTest.Solution;
 import br.com.contests.averybigsum.AVeryBigSum;
 import br.com.contests.comparethetriplets.CompareTheTriplets;
 import br.com.contests.countingvalleys.CountingValleys;
