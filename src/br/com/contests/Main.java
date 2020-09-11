@@ -1,16 +1,19 @@
 package br.com.contests;
 
 import br.com.contests.averybigsum.AVeryBigSum;
+import br.com.contests.bairesdev.BairesDev;
 import br.com.contests.comparethetriplets.CompareTheTriplets;
 import br.com.contests.countingvalleys.CountingValleys;
 import br.com.contests.jumpingontheclouds.JumpingOnTheClouds;
 import br.com.contests.leftrotation.LeftRotation;
+import br.com.contests.minimumswap2.MinimumSwap2;
 import br.com.contests.newyearchaos.NewYearChaos;
 import br.com.contests.plusminus.PlusMinus;
 import br.com.contests.repeatedstring.RepeatedString;
 import br.com.contests.sockmerchant.SockMerchant;
 import br.com.contests.timeconversion.TimeConversion;
 import br.com.contests.twodarrayds.TwoDArrayDS;
+import br.com.contests.vetextest.VetexTest;
 
 class Main {
 
@@ -71,5 +74,19 @@ class Main {
         NewYearChaos.testCase();
         System.out.println();
 
+        /* New Year Chaos */
+        System.out.println(MinimumSwap2.class.getSimpleName());
+        MinimumSwap2.testCase();
+        System.out.println();
+
+        /* Test Vetex */
+        System.out.println(VetexTest.class.getSimpleName());
+        VetexTest.initTest();
+        System.out.println();
+
+        /* Test Baires */
+        System.out.println(BairesDev.class.getSimpleName());
+        BairesDev.initTest();
+        System.out.println();
     }
 }
